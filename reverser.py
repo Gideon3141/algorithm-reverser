@@ -18,6 +18,8 @@ def reverse_algorithm():
 root = tk.Tk()
 root.title("Alg Reverser")
 root.geometry("350x150")
+empty_icon = tk.PhotoImage()
+root.iconphoto(False, empty_icon)
 
 tk.Label(root, text="Enter Algorithm:").pack(pady=5)
 entry = tk.Entry(root, width=40)
