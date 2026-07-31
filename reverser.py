@@ -16,8 +16,15 @@ def reverse_algorithm():
     result_label.config(text="Reversed: " + " ".join(reversed_moves))
 
 root = tk.Tk()
-root.title("Alg Reverser")
+root.title("AlgReverser")
 root.geometry("350x150")
+
+# Removes the default feather icon
+empty_icon = tk.PhotoImage()
+try:
+    root.iconphoto(False, empty_icon)
+except tk.TclError:
+    pass
 
 tk.Label(root, text="Enter Algorithm:").pack(pady=5)
 entry = tk.Entry(root, width=40)
